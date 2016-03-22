@@ -26,4 +26,8 @@ pay_order() {
       http://ruby-on-rails-.nitrousapp.com:3000/tables/1/orders/1/add
 }
 
+stats() {
+  curl http://ruby-on-rails-.nitrousapp.com:3000/stats
+}
+
 $1
