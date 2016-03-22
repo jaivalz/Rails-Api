@@ -1,0 +1,4 @@
+curl -v -X POST \
+     -H "Content-Type: application/json" \
+     -d @bin/table.json \
+     http://ruby-on-rails-.nitrousapp.com:3000/tables
