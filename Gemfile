@@ -5,6 +5,11 @@ gem 'rails', '4.2.6'
 gem 'rails-api'
 gem 'spring', :group => :development
 gem 'sqlite3'
+gem 'kaminari'
+
+group :development, :test do
+  gem 'hirb'
+end
 
 group :test do
   gem 'minitest-utils', require: "minitest/utils"
