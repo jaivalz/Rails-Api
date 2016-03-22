@@ -2,14 +2,21 @@ create_table() {
   curl -v -X POST \
      -H "Content-Type: application/json" \
      -d @bin/table.json \
-     http://ruby-on-rails-116071.nitrousapp.com:3000/tables
+     http://ruby-on-rails-.nitrousapp.com:3000/tables
 }
 
 create_order() {
   curl -v -X POST \
       -H "Content-Type: application/json" \
       -d @bin/order.json \
-     http://ruby-on-rails-116071.nitrousapp.com:3000/tables/1/orders
+      http://ruby-on-rails-.nitrousapp.com:3000/tables/1/orders
+}
+
+add_item() {
+  curl -v -X POST \
+      -H "Content-Type: application/json" \
+      -d @bin/add_item.json \
+      http://ruby-on-rails-.nitrousapp.com:3000/tables/1/orders/1/add
 }
 
 $1
