@@ -17,7 +17,7 @@ module TestHelpers
   end
 
   def spawn_order! options = {}
-    Order.create!({table_id: options[:table_id], name: "John Smith", email: "jose@josemota.net" }.merge(options))
+    Order.create!({table_id: options[:table_id], name: "jaime", email: "m11123@yopmail.com" }.merge(options))
   end
 
   def response_hash response
